@@ -24,10 +24,10 @@ public class TestBase {
 	@BeforeSuite
 	public void setUp() throws IOException, InterruptedException {
 		
-//		MyScreenRecorder.start();
-//		log.debug("Screen Recorder Started");
-//		NoxPlayerEmulator.start();
-//		log.debug("NoxPlayer Emulator Started");
+		MyScreenRecorder.start();
+		log.debug("Screen Recorder Started");
+		NoxPlayerEmulator.start();
+		log.debug("NoxPlayer Emulator Started");
 
 		if (driver == null) {
 			AppiumServer.start();
@@ -61,10 +61,10 @@ public class TestBase {
 		driver.quit();
 		AppiumServer.stop();
 		log.debug("Appium Server Stopped");
-		//NoxPlayerEmulator.stop();
-		//log.debug("NoxPlayer Emulator Stopped");
-		//MyScreenRecorder.stop();
-		//log.debug("Screen Recorder Stopped");
+		NoxPlayerEmulator.stop();
+		log.debug("NoxPlayer Emulator Stopped");
+		MyScreenRecorder.stop();
+		log.debug("Screen Recorder Stopped");
 
 	}
 
