@@ -1,0 +1,27 @@
+27/09/2018 17:19:02 devpinoyLogger Appium Server Started
+27/09/2018 17:19:02 devpinoyLogger Loading Android Properties file and Starting Android Application
+27/09/2018 17:19:26 devpinoyLogger ########Executing TC1 - Purchase One Adult One Child Return Ticket TestCase########
+27/09/2018 17:19:28 devpinoyLogger Already on Book Flight Homepage
+27/09/2018 17:20:07 devpinoyLogger Ticket Required is a Return Ticket
+27/09/2018 17:20:35 devpinoyLogger Flight Price in one direction is £1,011
+27/09/2018 17:20:46 devpinoyLogger Flight Price in one direction is £1,011
+27/09/2018 17:21:01 devpinoyLogger Total Flight cost is £3,544.02
+27/09/2018 17:23:16 devpinoyLogger ########Completed Execution of TC1 - Purchase One Adult One Child Return Ticket TestCase########
+27/09/2018 17:23:16 devpinoyLogger ########Executing TC2 - Purchase One Adult One way Ticket TestCase########
+27/09/2018 17:23:17 devpinoyLogger Already on Book Flight Homepage
+27/09/2018 17:23:53 devpinoyLogger Ticket Required is a One way Ticket
+27/09/2018 17:24:19 devpinoyLogger Flight Price in one direction is £5,183
+27/09/2018 17:24:26 devpinoyLogger One way Flight.
+27/09/2018 17:24:26 devpinoyLogger Total Flight cost is the same as Flight Price in one direction
+27/09/2018 17:25:36 devpinoyLogger ########Completed Execution of TC2 - Purchase One Adult One way Ticket TestCase########
+27/09/2018 17:25:36 devpinoyLogger ########Executing TC3 - Purchase One Adult Return Ticket TestCase########
+27/09/2018 17:25:38 devpinoyLogger Already on Book Flight Homepage
+27/09/2018 17:26:14 devpinoyLogger Ticket Required is a Return Ticket
+27/09/2018 17:26:42 devpinoyLogger Flight Price in one direction is £403
+27/09/2018 17:26:52 devpinoyLogger Flight Price in one direction is £516
+27/09/2018 17:27:02 devpinoyLogger Total Flight cost is £918.10
+27/09/2018 17:28:04 devpinoyLogger ########Completed Execution of TC3 - Purchase One Adult Return Ticket TestCase########
+27/09/2018 17:28:04 devpinoyLogger ########Executing TC3 - Purchase One Adult Return Ticket TestCase########
+27/09/2018 17:28:05 devpinoyLogger Already on Book Flight Homepage
+27/09/2018 17:28:48 devpinoyLogger mailscreenshotpath : C:\Eclipse\workspace\BlueStacks.BA.Poc\test-output\html\screenshots/27-Sep-2018__05_28_48PM.png
+27/09/2018 17:28:58 devpinoyLogger Appium Server Stopped
