@@ -2,6 +2,7 @@ package listener;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
@@ -12,6 +13,8 @@ import org.testng.Reporter;
 import utility.TestUtil;
 
 public class CustomListeners implements ITestListener, ISuiteListener{
+	
+	public static Logger log = Logger.getLogger("devpinoyLogger");
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -23,6 +26,7 @@ public class CustomListeners implements ITestListener, ISuiteListener{
 	}
 
 	public void onTestFailure(ITestResult result) {
+		log.debug("***** Error " + result.getName() + " test has failed *****");
 		System.out.println("***** Error " + result.getName() + " test has failed *****");
 		System.out.println("Screenshot Captured");
 		System.setProperty("org.uncommons.reportng.escape-output", "false");

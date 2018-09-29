@@ -52,7 +52,7 @@ public class BaHomeScreen extends ScreenBase {
 	}
 	
 	public void menuIconBtn(){
-		waitforEleClassNamePresence(20, "android.widget.ImageButton");
+		waitforEleClassNamePresence(25, "android.widget.ImageButton");
 		menuIconBtn.click();
 	}
 	
@@ -81,9 +81,9 @@ public class BaHomeScreen extends ScreenBase {
 	}
 	
 	public void bookFlightBtn() throws InterruptedException{
-		waitforElementClickable(20, "com.ba.mobile:id/button1");
-		bookFlightBtn.click();	
-		Thread.sleep(15000);
+				waitforElementClickable(25, "com.ba.mobile:id/button1");
+				bookFlightBtn.click();	
+				Thread.sleep(15000);
 	}
 	
 	public void logInBtn(){

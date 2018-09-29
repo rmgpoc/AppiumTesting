@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="586.896">
+           time="671.842">
   <properties />
-            <testcase name="failureScenario" time="44.738" classname="testcases.ba.baPlanTripTest">
+            <testcase name="failureScenario" time="42.936" classname="testcases.ba.baPlanTripTest">
                 <failure type="org.openqa.selenium.NoSuchElementException"
                   message="Can&apos;t locate an element by this strategy: Locator map: 
 - native content: &quot;By.id: com.ba.mobile:id/airportName&quot; 
@@ -28,7 +28,7 @@ Driver info: driver.version: unknown
   io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)
   screens.ba.BaAirportScreen.acceptAirportEntered(BaAirportScreen.java:58)
   screens.ba.BaAirportScreen.arrivalFlight(BaAirportScreen.java:72)
-  testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:135)
+  testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:131)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -60,8 +60,8 @@ Driver info: driver.version: unknown
           </testcase>
   
   
-            <testcase name="oneAdultOneWay" time="147.217" classname="testcases.ba.baPlanTripTest" />
-                <testcase name="oneAdultRtn" time="146.770" classname="testcases.ba.baPlanTripTest" />
-                <testcase name="oneAdultOneChildRtn" time="248.171" classname="testcases.ba.baPlanTripTest" />
+            <testcase name="oneAdultOneChildRtn" time="322.231" classname="testcases.ba.baPlanTripTest" />
+                <testcase name="oneAdultRtn" time="154.386" classname="testcases.ba.baPlanTripTest" />
+                <testcase name="oneAdultOneWay" time="152.289" classname="testcases.ba.baPlanTripTest" />
       
 </testsuite>

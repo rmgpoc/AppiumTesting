@@ -2,63 +2,63 @@
 <testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/28-Sep-2018__12_02_37AM.png">Screenshot Captured</a>]]>
+      <![CDATA[<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png">Screenshot Captured</a>]]>
     </line>
     <line>
-      <![CDATA[<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/28-Sep-2018__12_02_37AM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/28-Sep-2018__12_02_37AM.png" alt=""/></img></a>]]>
+      <![CDATA[<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png" alt=""/></img></a>]]>
     </line>
   </reporter-output>
-  <suite name="POC Test Suite Page Object Model with PageFactory" duration-ms="590747" started-at="2018-09-27T22:52:46Z" finished-at="2018-09-27T23:02:37Z">
+  <suite name="POC Test Suite Page Object Model with PageFactory" duration-ms="675961" started-at="2018-09-29T17:33:39Z" finished-at="2018-09-29T17:44:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="590747" started-at="2018-09-27T22:52:46Z" finished-at="2018-09-27T23:02:37Z">
+    <test name="Test" duration-ms="675961" started-at="2018-09-29T17:33:39Z" finished-at="2018-09-29T17:44:55Z">
       <class name="testcases.ba.baPlanTripTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.ba.baPlanTripTest@38afe297]" name="setUp" is-config="true" duration-ms="92366" started-at="2018-09-27T23:51:13Z" finished-at="2018-09-27T23:52:46Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.ba.baPlanTripTest@d3957fe]" name="setUp" is-config="true" duration-ms="30464" started-at="2018-09-29T18:33:09Z" finished-at="2018-09-29T18:33:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="init()[pri:0, instance:testcases.ba.baPlanTripTest@38afe297]" name="init" is-config="true" duration-ms="162" started-at="2018-09-27T23:52:46Z" finished-at="2018-09-27T23:52:46Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.ba.baPlanTripTest@d3957fe]" name="init" is-config="true" duration-ms="174" started-at="2018-09-29T18:33:39Z" finished-at="2018-09-29T18:33:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="oneAdultOneChildRtn(org.testng.ITestContext)[pri:1, instance:testcases.ba.baPlanTripTest@38afe297]" name="oneAdultOneChildRtn" duration-ms="248171" started-at="2018-09-27T23:52:46Z" finished-at="2018-09-27T23:56:54Z">
+        <test-method status="PASS" signature="oneAdultOneChildRtn(org.testng.ITestContext)[pri:1, instance:testcases.ba.baPlanTripTest@d3957fe]" name="oneAdultOneChildRtn" duration-ms="322231" started-at="2018-09-29T18:33:39Z" finished-at="2018-09-29T18:39:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@74e47444]]>
+                <![CDATA[org.testng.TestRunner@c2e3264]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneAdultOneChildRtn -->
-        <test-method status="PASS" signature="oneAdultOneWay(org.testng.ITestContext)[pri:2, instance:testcases.ba.baPlanTripTest@38afe297]" name="oneAdultOneWay" duration-ms="147217" started-at="2018-09-27T23:56:54Z" finished-at="2018-09-27T23:59:21Z">
+        <test-method status="PASS" signature="oneAdultOneWay(org.testng.ITestContext)[pri:2, instance:testcases.ba.baPlanTripTest@d3957fe]" name="oneAdultOneWay" duration-ms="152289" started-at="2018-09-29T18:39:02Z" finished-at="2018-09-29T18:41:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@74e47444]]>
+                <![CDATA[org.testng.TestRunner@c2e3264]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneAdultOneWay -->
-        <test-method status="PASS" signature="oneAdultRtn(org.testng.ITestContext)[pri:3, instance:testcases.ba.baPlanTripTest@38afe297]" name="oneAdultRtn" duration-ms="146770" started-at="2018-09-27T23:59:21Z" finished-at="2018-09-28T00:01:48Z">
+        <test-method status="PASS" signature="oneAdultRtn(org.testng.ITestContext)[pri:3, instance:testcases.ba.baPlanTripTest@d3957fe]" name="oneAdultRtn" duration-ms="154386" started-at="2018-09-29T18:41:34Z" finished-at="2018-09-29T18:44:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@74e47444]]>
+                <![CDATA[org.testng.TestRunner@c2e3264]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneAdultRtn -->
-        <test-method status="FAIL" signature="failureScenario(org.testng.ITestContext)[pri:4, instance:testcases.ba.baPlanTripTest@38afe297]" name="failureScenario" duration-ms="44738" started-at="2018-09-28T00:01:48Z" finished-at="2018-09-28T00:02:33Z">
+        <test-method status="FAIL" signature="failureScenario(org.testng.ITestContext)[pri:4, instance:testcases.ba.baPlanTripTest@d3957fe]" name="failureScenario" duration-ms="42936" started-at="2018-09-29T18:44:08Z" finished-at="2018-09-29T18:44:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@74e47444]]>
+                <![CDATA[org.testng.TestRunner@c2e3264]]>
               </value>
             </param>
           </params>
@@ -67,19 +67,19 @@
               <![CDATA[Can't locate an element by this strategy: Locator map: - native content: "By.id: com.ba.mobile:id/airportName" - html content: "by id or name "acceptAirportEntered""For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'System info: host: 'L1016967', ip: '192.168.0.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: - native content: "By.id: com.ba.mobile:id/airportName" - html content: "by id or name "acceptAirportEntered""For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'System info: host: 'L1016967', ip: '192.168.0.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'Driver info: driver.version: unknownat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)at screens.ba.BaAirportScreen.acceptAirportEntered(BaAirportScreen.java:58)at screens.ba.BaAirportScreen.arrivalFlight(BaAirportScreen.java:72)at testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:135)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: - native content: "By.id: com.ba.mobile:id/airportName" - html content: "by id or name "acceptAirportEntered""For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'System info: host: 'L1016967', ip: '192.168.0.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'Driver info: driver.version: unknownat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)at screens.ba.BaAirportScreen.acceptAirportEntered(BaAirportScreen.java:58)at screens.ba.BaAirportScreen.arrivalFlight(BaAirportScreen.java:72)at testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:131)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/28-Sep-2018__12_02_37AM.png">Screenshot Captured</a>]]>
+              <![CDATA[<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png">Screenshot Captured</a>]]>
             </line>
             <line>
-              <![CDATA[<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/28-Sep-2018__12_02_37AM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/28-Sep-2018__12_02_37AM.png" alt=""/></img></a>]]>
+              <![CDATA[<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png" alt=""/></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- failureScenario -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.ba.baPlanTripTest@38afe297]" name="tearDown" is-config="true" duration-ms="26539" started-at="2018-09-28T00:02:37Z" finished-at="2018-09-28T00:03:03Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.ba.baPlanTripTest@d3957fe]" name="tearDown" is-config="true" duration-ms="10303" started-at="2018-09-29T18:44:55Z" finished-at="2018-09-29T18:45:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

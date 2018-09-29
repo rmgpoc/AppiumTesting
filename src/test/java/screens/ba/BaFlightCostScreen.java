@@ -3,6 +3,7 @@ package screens.ba;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.PageFactory;
 
 import base.ScreenBase;
@@ -39,19 +40,29 @@ public class BaFlightCostScreen extends ScreenBase{
 	@AndroidFindBy(id="com.ba.mobile:id/totalPriceValue")
 	public MobileElement totalFlightPrice;
 	
+	@AndroidFindBy(id="com.ba.mobile:id/button")
+	public MobileElement fareAlertBtn;
+	
 	public void logAndSelectFlightPrice(){
-		waitforElementClickable(10, "com.ba.mobile:id/flightPriceView1");
-		log.debug("Flight Price in one direction is "+flightPriceBtn.getText());
-		flightPriceBtn.click();
+				waitforElementClickable(10, "com.ba.mobile:id/flightPriceView1");
+				log.debug("Flight Price in one direction is "+flightPriceBtn.getText());
+				flightPriceBtn.click();
 	}
 	
 	public void clickContinueButton(){
-		if(continueOptionBtn.size()>1){
-			waitforElementClickable(5, "com.ba.mobile:id/economy_standard_choose_btn");
-			standardEconomyPriceBtn.click();
-		}else{
-			waitforElementClickable(5, "com.ba.mobile:id/continueButton");
-			continueButton.click();
+		try{
+			if(continueOptionBtn.size()>1){
+				waitforElementClickable(5, "com.ba.mobile:id/economy_standard_choose_btn");
+				standardEconomyPriceBtn.click();
+			}else if(continueButton.isDisplayed()){
+				waitforElementClickable(5, "com.ba.mobile:id/continueButton");
+				continueButton.click();
+			}else{
+				log.debug("Continue Button not displayed");
+			}
+			
+		}catch(NoSuchElementException e){
+			e.printStackTrace();
 		}
 	}
 	

@@ -51,7 +51,6 @@ public class baPlanTripTest extends TestBase {
 	@Test(priority=1)
 	public void oneAdultOneChildRtn(ITestContext context) throws InterruptedException{
 		log.debug("########Executing TC1 - Purchase One Adult One Child Return Ticket TestCase########");
-		baHome.bookFlightHomePage();
 		baHome.bookFlightBtn();
 		baAirport.departureFlight("LHR");
 		baAirport.arrivalFlight("KUL");
@@ -77,7 +76,6 @@ public class baPlanTripTest extends TestBase {
 	@Test(priority=2)
 	public void oneAdultOneWay(ITestContext context) throws InterruptedException{
 		log.debug("########Executing TC2 - Purchase One Adult One way Ticket TestCase########");
-		baHome.bookFlightHomePage();
 		baHome.bookFlightBtn();
 		baAirport.departureFlight("LHR");
 		baAirport.arrivalFlight("DMM");
@@ -103,7 +101,6 @@ public class baPlanTripTest extends TestBase {
 	@Test(priority=3)
 	public void oneAdultRtn(ITestContext context) throws InterruptedException{
 		log.debug("########Executing TC3 - Purchase One Adult Return Ticket TestCase########");
-		baHome.bookFlightHomePage();
 		baHome.bookFlightBtn();
 		baAirport.departureFlight("LHR");
 		baAirport.arrivalFlight("TXL");
@@ -129,7 +126,6 @@ public class baPlanTripTest extends TestBase {
 	@Test(priority=4)
 	public void failureScenario(ITestContext context) throws InterruptedException{
 		log.debug("########Executing TC3 - Purchase One Adult Return Ticket TestCase########");
-		baHome.bookFlightHomePage();
 		baHome.bookFlightBtn();
 		baAirport.departureFlight("LHR");
 		baAirport.arrivalFlight("XXX");

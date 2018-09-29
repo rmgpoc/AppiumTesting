@@ -3,14 +3,16 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.memo.CategoryMemoCreateTest">
+      <class name="testcases.ba.baPlanTripTest">
         <methods>
           <include name="init"/>
-          <include name="addMemoToCategory"/>
+          <include name="failureScenario" invocation-numbers="0"/>
+          <include name="oneAdultRtn" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="oneAdultOneWay" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testcases.memo.CategoryMemoCreateTest -->
+      </class> <!-- testcases.ba.baPlanTripTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
