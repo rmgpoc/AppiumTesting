@@ -69,7 +69,7 @@ public class BaHomeScreen extends ScreenBase {
 	
 	public void bookFlightHomePage(){
 		try{
-			if(!bookFlightBtn.isDisplayed()){
+			if(!bookFlightBtn.isEnabled()){
 				menuIconBtn();
 				menuHomeBtn();
 			}else{

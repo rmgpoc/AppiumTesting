@@ -20,6 +20,9 @@ public class BaAirportScreen extends ScreenBase{
 	@AndroidFindBy(id="com.ba.mobile:id/departureLL")
 	public MobileElement departureBtn;
 	
+	@AndroidFindBy(id="com.ba.mobile:id/departureLabel")
+	public MobileElement departureLabel;
+	
 	@AndroidFindBy(id = "com.ba.mobile:id/message")
 	public MobileElement messageLatestPriceLoad;
 	
@@ -59,10 +62,14 @@ public class BaAirportScreen extends ScreenBase{
 	}
 
 	public void departureFlight(String outboundAirportName){
-		departureBtn();
-		clickInputField();
-		InputOutboundField(outboundAirportName);
-		acceptAirportEntered();
+		if(departureLabel.getText().contains(outboundAirportName)){
+			log.debug("Departure Location Accepted");
+		}else{
+			departureBtn();
+			clickInputField();
+			InputOutboundField(outboundAirportName);
+			acceptAirportEntered();			
+		}
 	}
 
 	public void arrivalFlight(String inboundAirportName){

@@ -93,7 +93,7 @@ public class BaFlightCostScreen extends ScreenBase{
 	
 	public void displayTotalFlightCost(String journeyType){
 		if(journeyType == "Return"){
-			waitforElementPresence(5, "com.ba.mobile:id/totalPriceValue");
+			waitforElementPresence(10, "com.ba.mobile:id/totalPriceValue");
 			log.debug("Total Flight cost is "+totalFlightPrice.getText());
 			clickContinueBtn();
 		}else if (journeyType == "One way"){

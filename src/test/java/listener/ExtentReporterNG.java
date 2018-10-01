@@ -59,7 +59,7 @@ public class ExtentReporterNG implements IReporter {
     private void init() {
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
         htmlReporter.config().setDocumentTitle("ExtentReports - Created by TestNG Listener - Ositadinma Ugbene");
-        htmlReporter.config().setReportName("BIG Platform Test Team Demo of Android Automation POC (Page Object Model with PageFactory) - ExtentReports - Created by TestNG Listener - Ositadinma Ugbene");
+        htmlReporter.config().setReportName("Android Automation POC (Page Object Model with PageFactory) - ExtentReports - Created by TestNG Listener - Ositadinma Ugbene");
         htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTheme(Theme.STANDARD);

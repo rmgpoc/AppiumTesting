@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,34 +102,15 @@
                     <div class="method-list-content failed suite-POC_Test_Suite_Page_Object_Model_with_PageFactory">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory" title="testcases.ba.baPlanTripTest" hash-for-method="failureScenario(org.testng.TestRunner@c2e3264)">failureScenario(org.testng.TestRunner@c2e3264)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory" title="testcases.ba.baPlanTripTest" hash-for-method="oneAdultOneChildRtn(org.testng.TestRunner@74e47444)">oneAdultOneChildRtn(org.testng.TestRunner@74e47444)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory" title="testcases.ba.baPlanTripTest" hash-for-method="oneAdultOneWay(org.testng.TestRunner@74e47444)">oneAdultOneWay(org.testng.TestRunner@74e47444)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-POC_Test_Suite_Page_Object_Model_with_PageFactory -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory" class="hide-methods passed suite-POC_Test_Suite_Page_Object_Model_with_PageFactory"> (hide)</a> <!-- hide-methods passed suite-POC_Test_Suite_Page_Object_Model_with_PageFactory -->
-                      <a href="#" panel-name="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory" class="show-methods passed suite-POC_Test_Suite_Page_Object_Model_with_PageFactory"> (show)</a> <!-- show-methods passed suite-POC_Test_Suite_Page_Object_Model_with_PageFactory -->
-                    </span>
-                    <div class="method-list-content passed suite-POC_Test_Suite_Page_Object_Model_with_PageFactory">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory" title="testcases.ba.baPlanTripTest" hash-for-method="oneAdultOneChildRtn(org.testng.TestRunner@c2e3264)">oneAdultOneChildRtn(org.testng.TestRunner@c2e3264)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory" title="testcases.ba.baPlanTripTest" hash-for-method="oneAdultOneWay(org.testng.TestRunner@c2e3264)">oneAdultOneWay(org.testng.TestRunner@c2e3264)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory" title="testcases.ba.baPlanTripTest" hash-for-method="oneAdultRtn(org.testng.TestRunner@c2e3264)">oneAdultRtn(org.testng.TestRunner@c2e3264)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-POC_Test_Suite_Page_Object_Model_with_PageFactory -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -149,61 +130,87 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="failureScenario(org.testng.TestRunner@c2e3264)">
-                  </a> <!-- failureScenario(org.testng.TestRunner@c2e3264) -->
-                  <span class="method-name">failureScenario</span>
-                  <span class="parameters">(org.testng.TestRunner@c2e3264)</span>
+                  <a name="oneAdultOneChildRtn(org.testng.TestRunner@74e47444)">
+                  </a> <!-- oneAdultOneChildRtn(org.testng.TestRunner@74e47444) -->
+                  <span class="method-name">oneAdultOneChildRtn</span>
+                  <span class="parameters">(org.testng.TestRunner@74e47444)</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.id: com.ba.mobile:id/airportName&quot; 
-- html content: &quot;by id or name &quot;acceptAirportEntered&quot;&quot;
+- native content: &quot;By.id: com.ba.mobile:id/lastNameEdit&quot; 
+- html content: &quot;by id or name &quot;lastName&quot;&quot;
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L1016967&apos;, ip: &apos;192.168.0.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: driver.version: unknown
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at screens.ba.BaAirportScreen.acceptAirportEntered(BaAirportScreen.java:58)
-	at screens.ba.BaAirportScreen.arrivalFlight(BaAirportScreen.java:72)
-	at testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:131)
+	at screens.ba.BaPassengerDetailScreen.inputLastName(BaPassengerDetailScreen.java:127)
+	at screens.ba.BaPassengerDetailScreen.addPassengerDetails(BaPassengerDetailScreen.java:214)
+	at screens.ba.BaPassengerDetailScreen.addChildPassengerCountDetails(BaPassengerDetailScreen.java:281)
+	at testcases.ba.baPlanTripTest.oneAdultOneChildRtn(baPlanTripTest.java:68)
 ... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="oneAdultOneWay(org.testng.TestRunner@74e47444)">
+                  </a> <!-- oneAdultOneWay(org.testng.TestRunner@74e47444) -->
+                  <span class="method-name">oneAdultOneWay</span>
+                  <span class="parameters">(org.testng.TestRunner@74e47444)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 25 seconds waiting for element to be clickable: By.id: com.ba.mobile:id/button1
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at base.ScreenBase.waitforElementClickable(ScreenBase.java:36)
+	at screens.ba.BaHomeScreen.bookFlightBtn(BaHomeScreen.java:84)
+	at testcases.ba.baPlanTripTest.oneAdultOneWay(baPlanTripTest.java:80)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+*** Element info: {Using=id, value=com.ba.mobile:id/button1}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 28 more
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-POC_Test_Suite_Page_Object_Model_with_PageFactory-class-failed -->
-          <div class="suite-POC_Test_Suite_Page_Object_Model_with_PageFactory-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.ba.baPlanTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="oneAdultOneChildRtn(org.testng.TestRunner@c2e3264)">
-                  </a> <!-- oneAdultOneChildRtn(org.testng.TestRunner@c2e3264) -->
-                  <span class="method-name">oneAdultOneChildRtn</span>
-                  <span class="parameters">(org.testng.TestRunner@c2e3264)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="oneAdultOneWay(org.testng.TestRunner@c2e3264)">
-                  </a> <!-- oneAdultOneWay(org.testng.TestRunner@c2e3264) -->
-                  <span class="method-name">oneAdultOneWay</span>
-                  <span class="parameters">(org.testng.TestRunner@c2e3264)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="oneAdultRtn(org.testng.TestRunner@c2e3264)">
-                  </a> <!-- oneAdultRtn(org.testng.TestRunner@c2e3264) -->
-                  <span class="method-name">oneAdultRtn</span>
-                  <span class="parameters">(org.testng.TestRunner@c2e3264)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-POC_Test_Suite_Page_Object_Model_with_PageFactory-class-passed -->
         </div> <!-- panel POC_Test_Suite_Page_Object_Model_with_PageFactory -->
         <div panel-name="test-xml-POC_Test_Suite_Page_Object_Model_with_PageFactory" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -262,28 +269,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'oneAdultOneChildRtn')
 data.setCell(0, 2, 'testcases.ba.baPlanTripTest')
-data.setCell(0, 3, 322231);
+data.setCell(0, 3, 198109);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'oneAdultRtn')
+data.setCell(1, 1, 'oneAdultOneWay')
 data.setCell(1, 2, 'testcases.ba.baPlanTripTest')
-data.setCell(1, 3, 154386);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'oneAdultOneWay')
-data.setCell(2, 2, 'testcases.ba.baPlanTripTest')
-data.setCell(2, 3, 152289);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'failureScenario')
-data.setCell(3, 2, 'testcases.ba.baPlanTripTest')
-data.setCell(3, 3, 42936);
+data.setCell(1, 3, 34777);
 window.suiteTableData['POC_Test_Suite_Page_Object_Model_with_PageFactory']= { tableData: data, tableDiv: 'times-div-POC_Test_Suite_Page_Object_Model_with_PageFactory'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-POC_Test_Suite_Page_Object_Model_with_PageFactory">
               </div> <!-- times-div-POC_Test_Suite_Page_Object_Model_with_PageFactory -->
             </div> <!-- times-div -->
@@ -295,10 +294,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">failureScenario(org.testng.TestRunner@c2e3264)</span>
+              <span class="reporter-method-name">oneAdultOneChildRtn(org.testng.TestRunner@74e47444)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png">Screenshot Captured</a></span>
-                <span class="reporter-method-output"><br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png" alt=""/></img></a></span>
+                <span class="reporter-method-output"><a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png">Screenshot Captured</a></span>
+                <span class="reporter-method-output"><br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png" alt=""/></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">oneAdultOneWay(org.testng.TestRunner@74e47444)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png">Screenshot Captured</a></span>
+                <span class="reporter-method-output"><br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png" alt=""/></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -323,29 +329,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">30465 ms</span>
+                <span class="method-start">39914 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">oneAdultOneChildRtn(org.testng.TestRunner@c2e3264)</span>
-                <span class="method-start">30655 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">oneAdultOneWay(org.testng.TestRunner@c2e3264)</span>
-                <span class="method-start">352890 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">oneAdultRtn(org.testng.TestRunner@c2e3264)</span>
-                <span class="method-start">505180 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">oneAdultOneChildRtn(org.testng.TestRunner@74e47444)</span>
+                <span class="method-start">40095 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">failureScenario(org.testng.TestRunner@c2e3264)</span>
-                <span class="method-start">659567 ms</span>
+                <span class="method-name">oneAdultOneWay(org.testng.TestRunner@74e47444)</span>
+                <span class="method-start">246554 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">706451 ms</span>
+                <span class="method-start">289646 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 29, 2018 06:33:39 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 1, 2018 03:51:01 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,8 +73,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -125,15 +124,15 @@
 				
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>failureScenario</span>
-						<span class='test-time'>Sep 29, 2018 06:44:08 PM</span>
+						<span class='test-name'>oneAdultOneChildRtn</span>
+						<span class='test-time'>Oct 1, 2018 03:51:01 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 29, 2018 06:44:08 PM</span>
-	<span class='label end-time'>Sep 29, 2018 06:44:51 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 42s+936ms</span>
+	<span class='label start-time'>Oct 1, 2018 03:51:01 PM</span>
+	<span class='label end-time'>Oct 1, 2018 03:54:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 18s+109ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -147,20 +146,21 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:45:06 PM</td>
+					<td class='timestamp'>3:55:21 PM</td>
 					<td class='step-details'><textarea>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
-- native content: "By.id: com.ba.mobile:id/airportName" 
-- html content: "by id or name "acceptAirportEntered""
+- native content: "By.id: com.ba.mobile:id/lastNameEdit" 
+- html content: "by id or name "lastName""
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'L1016967', ip: '192.168.0.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+System info: host: 'L1016967', ip: '172.19.172.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
 Driver info: driver.version: unknown
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)
-	at screens.ba.BaAirportScreen.acceptAirportEntered(BaAirportScreen.java:58)
-	at screens.ba.BaAirportScreen.arrivalFlight(BaAirportScreen.java:72)
-	at testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:131)
+	at screens.ba.BaPassengerDetailScreen.inputLastName(BaPassengerDetailScreen.java:127)
+	at screens.ba.BaPassengerDetailScreen.addPassengerDetails(BaPassengerDetailScreen.java:214)
+	at screens.ba.BaPassengerDetailScreen.addChildPassengerCountDetails(BaPassengerDetailScreen.java:281)
+	at testcases.ba.baPlanTripTest.oneAdultOneChildRtn(baPlanTripTest.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -195,85 +195,17 @@ Driver info: driver.version: unknown
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>oneAdultOneChildRtn</span>
-						<span class='test-time'>Sep 29, 2018 06:33:39 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Sep 29, 2018 06:33:39 PM</span>
-	<span class='label end-time'>Sep 29, 2018 06:39:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 5m 22s+231ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:45:06 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>oneAdultRtn</span>
-						<span class='test-time'>Sep 29, 2018 06:41:34 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Sep 29, 2018 06:41:34 PM</span>
-	<span class='label end-time'>Sep 29, 2018 06:44:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 2m 34s+386ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:45:06 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>oneAdultOneWay</span>
-						<span class='test-time'>Sep 29, 2018 06:39:02 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Oct 1, 2018 03:54:27 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 29, 2018 06:39:02 PM</span>
-	<span class='label end-time'>Sep 29, 2018 06:41:34 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 2m 32s+289ms</span>
+	<span class='label start-time'>Oct 1, 2018 03:54:27 PM</span>
+	<span class='label end-time'>Oct 1, 2018 03:55:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+777ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -285,10 +217,86 @@ Driver info: driver.version: unknown
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:45:06 PM</td>
-					<td class='step-details'>Test passed</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:55:21 PM</td>
+					<td class='step-details'><pre>org.openqa.selenium.TimeoutException: Timed out after 25 seconds waiting for element to be clickable: By.id: com.ba.mobile:id/button1
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'L1016967', ip: '172.19.172.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at base.ScreenBase.waitforElementClickable(ScreenBase.java:36)
+	at screens.ba.BaHomeScreen.bookFlightBtn(BaHomeScreen.java:84)
+	at testcases.ba.baPlanTripTest.oneAdultOneWay(baPlanTripTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'L1016967', ip: '172.19.172.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+*** Element info: {Using=id, value=com.ba.mobile:id/button1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 28 more
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -328,10 +336,10 @@ Driver info: driver.version: unknown
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -343,10 +351,10 @@ Driver info: driver.version: unknown
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -398,21 +406,22 @@ Driver info: driver.version: unknown
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Sep 29, 2018 06:44:08 PM</td>
-                                                        <td class='linked' test-id='1'>failureScenario</td>
+                                                        <td>Oct 1, 2018 03:51:01 PM</td>
+                                                        <td class='linked' test-id='1'>oneAdultOneChildRtn</td>
                                                         <td><pre><textarea>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
-- native content: "By.id: com.ba.mobile:id/airportName" 
-- html content: "by id or name "acceptAirportEntered""
+- native content: "By.id: com.ba.mobile:id/lastNameEdit" 
+- html content: "by id or name "lastName""
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'L1016967', ip: '192.168.0.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+System info: host: 'L1016967', ip: '172.19.172.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
 Driver info: driver.version: unknown
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)
-	at screens.ba.BaAirportScreen.acceptAirportEntered(BaAirportScreen.java:58)
-	at screens.ba.BaAirportScreen.arrivalFlight(BaAirportScreen.java:72)
-	at testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:131)
+	at screens.ba.BaPassengerDetailScreen.inputLastName(BaPassengerDetailScreen.java:127)
+	at screens.ba.BaPassengerDetailScreen.addPassengerDetails(BaPassengerDetailScreen.java:214)
+	at screens.ba.BaPassengerDetailScreen.addChildPassengerCountDetails(BaPassengerDetailScreen.java:281)
+	at testcases.ba.baPlanTripTest.oneAdultOneChildRtn(baPlanTripTest.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -445,6 +454,108 @@ Driver info: driver.version: unknown
                                 </div>
                             </div>
                         </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Oct 1, 2018 03:54:27 PM</td>
+                                                        <td class='linked' test-id='2'>oneAdultOneWay</td>
+                                                        <td><pre><pre>org.openqa.selenium.TimeoutException: Timed out after 25 seconds waiting for element to be clickable: By.id: com.ba.mobile:id/button1
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'L1016967', ip: '172.19.172.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at base.ScreenBase.waitforElementClickable(ScreenBase.java:36)
+	at screens.ba.BaHomeScreen.bookFlightBtn(BaHomeScreen.java:84)
+	at testcases.ba.baPlanTripTest.oneAdultOneWay(baPlanTripTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'L1016967', ip: '172.19.172.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+*** Element info: {Using=id, value=com.ba.mobile:id/button1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 28 more
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
                 </ul>
         </div>
     </div>
@@ -464,31 +575,31 @@ Driver info: driver.version: unknown
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 29, 2018 06:33:39 PM</div>
+					<div class='panel-lead'>Oct 1, 2018 03:51:01 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 29, 2018 06:45:06 PM</div>
+			 		<div class='panel-lead'>Oct 1, 2018 03:55:21 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 11m 26s+322ms</div>
+					<div class='panel-lead'>0h 4m 20s+877ms</div>
 				</div>
 			</div>
 		</div>
@@ -500,8 +611,10 @@ Driver info: driver.version: unknown
 		<h5>TestRunner Logs</h5>
 		
 		<div class='card-panel'>
-				<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png">Screenshot Captured</a>
-				<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/29-Sep-2018__06_44_55PM.png" alt=""/></img></a>
+				<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png">Screenshot Captured</a>
+				<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png" alt=""/></img></a>
+				<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png">Screenshot Captured</a>
+				<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png" alt=""/></img></a>
 		</div>
 	</div>
 </div>
@@ -511,22 +624,22 @@ Driver info: driver.version: unknown
 
 		<script>
 			var statusGroup = {
-				passParent: 3,
-				failParent: 1,
+				passParent: 0,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 2,
 				
-				passChild: 3,
-				failChild: 1,
+				passChild: 0,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

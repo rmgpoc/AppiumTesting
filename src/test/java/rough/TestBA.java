@@ -45,7 +45,7 @@ public class TestBA {
 			
 		service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
 				.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"))
-				.withAppiumJS(new File("C:\\Users\\klink\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+				.withAppiumJS(new File("C:\\Users\\ugbene.ositadinma\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 				.withLogFile(new File(System.getProperty("user.dir")+"\\src\\test\\resources\\logs\\log.txt")));
 		service.start();
 		
@@ -89,12 +89,58 @@ public class TestBA {
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.ba.mobile:id/tripTypeLabel")));
 		
 		//Select Outbound Date
-		driver.findElementById("com.ba.mobile:id/outboundDateLL").click();	
-		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.view.ViewGroup/android.view.ViewGroup[5]/android.widget.FrameLayout[5]/android.widget.TextView").click();
+		driver.findElementById("com.ba.mobile:id/outboundDateLL").click();
+		//driver.findElementByCssSelector(".android.widget.TextView[text=\"3\"]").click();
+		String mt = "October 2018";
+		List<MobileElement> months = driver.findElementsById("com.ba.mobile:id/title");
+		for(MobileElement month: months){
+			if(month.getText().equals(mt)){
+				month.click();
+				String cType = "8";
+				List<MobileElement> dates = driver.findElementsByClassName("android.widget.TextView");
+				System.out.println("################");
+				System.out.println(dates);
+				System.out.println("################");
+				for(MobileElement date: dates){
+					if(date.getText().equals(cType)){
+						date.click();
+						break;
+					}
+				}
+				
+				break;
+			}
+		}
+//		String cType = "30";
+//		List<MobileElement> dates = driver.findElementsByClassName("android.widget.TextView");		
+//		for(MobileElement date: dates){
+//			if(date.getText().equals(cType)){
+//				date.click();
+//				break;
+//			}
+//		}
+		//driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.view.ViewGroup/android.view.ViewGroup[5]/android.widget.FrameLayout[5]/android.widget.TextView").click();
 				
 		//Select Inbound Date
 		//driver.findElementById("com.ba.mobile:id/inboundDateLL").click();
-		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.FrameLayout[6]/android.widget.TextView").click();
+		//driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.FrameLayout[6]/android.widget.TextView").click();
+		String mtt = "October 2018";
+		List<MobileElement> monhs = driver.findElementsById("com.ba.mobile:id/title");
+		for(MobileElement monh: monhs){
+			if(monh.getText().equals(mtt)){
+				monh.click();
+				String cType = "28";
+				List<MobileElement> dates = driver.findElementsByClassName("android.widget.TextView");		
+				for(MobileElement date: dates){
+					if(date.getText().equals(cType)){
+						date.click();
+						break;
+					}
+				}
+				
+				break;
+			}
+		}
 		
 		//Click Travel Date selection Done button
 		driver.findElementById("com.ba.mobile:id/doneFilter").click();

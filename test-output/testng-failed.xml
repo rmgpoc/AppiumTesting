@@ -12,8 +12,9 @@
       <class name="testcases.ba.baPlanTripTest">
         <methods>
           <include name="init"/>
-          <include name="failureScenario" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="oneAdultOneChildRtn" invocation-numbers="0"/>
+          <include name="oneAdultOneWay" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testcases.ba.baPlanTripTest -->
