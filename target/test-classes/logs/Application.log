@@ -1,28 +1,4 @@
-01/10/2018 16:04:21 devpinoyLogger Screen Recorder Started
-01/10/2018 16:05:11 devpinoyLogger NoxPlayer Emulator Started
-01/10/2018 16:05:16 devpinoyLogger Appium Server Started
-01/10/2018 16:05:16 devpinoyLogger Loading Android Properties file and Starting Android Application
-01/10/2018 16:06:04 devpinoyLogger ########Executing TC1 - Purchase One Adult One Child Return Ticket TestCase########
-01/10/2018 16:06:51 devpinoyLogger Ticket Required is a Return Ticket
-01/10/2018 16:07:24 devpinoyLogger Flight Price in one direction is £1,011
-01/10/2018 16:07:40 devpinoyLogger Flight Price in one direction is £1,011
-01/10/2018 16:07:56 devpinoyLogger Total Flight cost is £3,544.22
-01/10/2018 16:10:18 devpinoyLogger ########Completed Execution of TC1 - Purchase One Adult One Child Return Ticket TestCase########
-01/10/2018 16:10:18 devpinoyLogger ########Executing TC2 - Purchase One Adult One way Ticket TestCase########
-01/10/2018 16:11:01 devpinoyLogger Ticket Required is a One way Ticket
-01/10/2018 16:11:27 devpinoyLogger Flight Price in one direction is £5,183
-01/10/2018 16:11:33 devpinoyLogger One way Flight.
-01/10/2018 16:11:33 devpinoyLogger Total Flight cost is the same as Flight Price in one direction
-01/10/2018 16:12:45 devpinoyLogger ########Completed Execution of TC2 - Purchase One Adult One way Ticket TestCase########
-01/10/2018 16:12:45 devpinoyLogger ########Executing TC3 - Purchase One Adult Return Ticket TestCase########
-01/10/2018 16:13:28 devpinoyLogger Ticket Required is a Return Ticket
-01/10/2018 16:13:58 devpinoyLogger Flight Price in one direction is £403
-01/10/2018 16:14:16 devpinoyLogger Flight Price in one direction is £516
-01/10/2018 16:14:28 devpinoyLogger Total Flight cost is £917.90
-01/10/2018 16:15:29 devpinoyLogger ########Completed Execution of TC3 - Purchase One Adult Return Ticket TestCase########
-01/10/2018 16:15:29 devpinoyLogger ########Executing TC3 - Purchase One Adult Return Ticket TestCase########
-01/10/2018 16:16:18 devpinoyLogger ***** Error failureScenario test has failed *****
-01/10/2018 16:16:23 devpinoyLogger mailscreenshotpath : C:\Users\ugbene.ositadinma\.jenkins\workspace\AndroidAutomationPocFreeStyleJenkins\test-output\html\screenshots/01-Oct-2018__04_16_23PM.png
-01/10/2018 16:16:34 devpinoyLogger Appium Server Stopped
-01/10/2018 16:16:34 devpinoyLogger NoxPlayer Emulator Stopped
-01/10/2018 16:16:49 devpinoyLogger Screen Recorder Stopped
+02/10/2018 17:28:38 devpinoyLogger Screen Recorder Started
+02/10/2018 17:29:28 devpinoyLogger NoxPlayer Emulator Started
+02/10/2018 17:29:34 devpinoyLogger Appium Server Started
+02/10/2018 17:29:34 devpinoyLogger Loading Android Properties file and Starting Android Application

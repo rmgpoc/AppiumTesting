@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 01 15:51:00 BST 2018</td>
+<td>Started on:</td><td>Tue Oct 02 14:10:52 BST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>249 seconds (249698 ms)</td>
+<tr><td>Total time:</td><td>221 seconds (221744 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,101 +75,166 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.ba.baPlanTripTest.oneAdultOneChildRtn()'><b>oneAdultOneChildRtn</b><br>Test class: testcases.ba.baPlanTripTest<br>Parameters: org.testng.TestRunner@74e47444<br/>
-<a href="#Output-1752535057" onClick='toggleBox("Output-1752535057", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcases.ba.baPlanTripTest.failureScenario()'><b>failureScenario</b><br>Test class: testcases.ba.baPlanTripTest<br>Parameters: org.testng.TestRunner@4c198dec<br/>
+<a href="#Output-39057658" onClick='toggleBox("Output-39057658", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1752535057" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1752535057">
-<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png">Screenshot Captured</a><br/>
-<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_54_27PM.png" alt=""/></img></a><br/>
+<a href="#Output-39057658" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-39057658">
+<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_14_33PM.png">Screenshot Captured</a><br/>
+<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_14_33PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_14_33PM.png" alt=""/></img></a><br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.id: com.ba.mobile:id/lastNameEdit&quot; 
-- html content: &quot;by id or name &quot;lastName&quot;&quot;
+- native content: &quot;By.id: com.ba.mobile:id/airportName&quot; 
+- html content: &quot;by id or name &quot;acceptAirportEntered&quot;&quot;
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: driver.version: unknown
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at screens.ba.BaPassengerDetailScreen.inputLastName(BaPassengerDetailScreen.java:127)
-	at screens.ba.BaPassengerDetailScreen.addPassengerDetails(BaPassengerDetailScreen.java:214)
-	at screens.ba.BaPassengerDetailScreen.addChildPassengerCountDetails(BaPassengerDetailScreen.java:281)
-	at testcases.ba.baPlanTripTest.oneAdultOneChildRtn(baPlanTripTest.java:68)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1752535057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1752535057'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
-- native content: &quot;By.id: com.ba.mobile:id/lastNameEdit&quot; 
-- html content: &quot;by id or name &quot;lastName&quot;&quot;
+	at screens.ba.BaAirportScreen.acceptAirportEntered(BaAirportScreen.java:61)
+	at screens.ba.BaAirportScreen.arrivalFlight(BaAirportScreen.java:79)
+	at testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:131)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace39057658", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace39057658'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
+- native content: &quot;By.id: com.ba.mobile:id/airportName&quot; 
+- html content: &quot;by id or name &quot;acceptAirportEntered&quot;&quot;
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: driver.version: unknown
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
-	at screens.ba.BaPassengerDetailScreen.inputLastName(BaPassengerDetailScreen.java:127)
-	at screens.ba.BaPassengerDetailScreen.addPassengerDetails(BaPassengerDetailScreen.java:214)
-	at screens.ba.BaPassengerDetailScreen.addChildPassengerCountDetails(BaPassengerDetailScreen.java:281)
-	at testcases.ba.baPlanTripTest.oneAdultOneChildRtn(baPlanTripTest.java:68)
+	at screens.ba.BaAirportScreen.acceptAirportEntered(BaAirportScreen.java:61)
+	at screens.ba.BaAirportScreen.arrivalFlight(BaAirportScreen.java:79)
+	at testcases.ba.baPlanTripTest.failureScenario(baPlanTripTest.java:131)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>198</td>
-<td>testcases.ba.baPlanTripTest@38afe297</td></tr>
+<td>71</td>
+<td>testcases.ba.baPlanTripTest@7dc0f706</td></tr>
 <tr>
-<td title='testcases.ba.baPlanTripTest.oneAdultOneWay()'><b>oneAdultOneWay</b><br>Test class: testcases.ba.baPlanTripTest<br>Parameters: org.testng.TestRunner@74e47444<br/>
-<a href="#Output-355885103" onClick='toggleBox("Output-355885103", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcases.ba.baPlanTripTest.oneAdultOneChildRtn()'><b>oneAdultOneChildRtn</b><br>Test class: testcases.ba.baPlanTripTest<br>Parameters: org.testng.TestRunner@4c198dec<br/>
+<a href="#Output-127336782" onClick='toggleBox("Output-127336782", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-355885103" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-355885103">
-<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png">Screenshot Captured</a><br/>
-<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/01-Oct-2018__03_55_10PM.png" alt=""/></img></a><br/>
+<a href="#Output-127336782" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-127336782">
+<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_11_47PM.png">Screenshot Captured</a><br/>
+<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_11_47PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_11_47PM.png" alt=""/></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
+- native content: &quot;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.View/android.view.View[4]/android.widget.FrameLayout[1]/android.widget.TextView&quot; 
+- html content: &quot;by id or name &quot;hardCodedOutboundTravelDate&quot;&quot;
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
+	at screens.ba.BaTravelCalendarScreen.clickOutboundTravelDate(BaTravelCalendarScreen.java:44)
+	at screens.ba.BaTravelCalendarScreen.travelDate(BaTravelCalendarScreen.java:58)
+	at testcases.ba.baPlanTripTest.oneAdultOneChildRtn(baPlanTripTest.java:58)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace127336782", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace127336782'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
+- native content: &quot;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.View/android.view.View[4]/android.widget.FrameLayout[1]/android.widget.TextView&quot; 
+- html content: &quot;by id or name &quot;hardCodedOutboundTravelDate&quot;&quot;
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
+	at screens.ba.BaTravelCalendarScreen.clickOutboundTravelDate(BaTravelCalendarScreen.java:44)
+	at screens.ba.BaTravelCalendarScreen.travelDate(BaTravelCalendarScreen.java:58)
+	at testcases.ba.baPlanTripTest.oneAdultOneChildRtn(baPlanTripTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>50</td>
+<td>testcases.ba.baPlanTripTest@7dc0f706</td></tr>
+<tr>
+<td title='testcases.ba.baPlanTripTest.oneAdultOneWay()'><b>oneAdultOneWay</b><br>Test class: testcases.ba.baPlanTripTest<br>Parameters: org.testng.TestRunner@4c198dec<br/>
+<a href="#Output-49980371" onClick='toggleBox("Output-49980371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-49980371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-49980371">
+<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_12_20PM.png">Screenshot Captured</a><br/>
+<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_12_20PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_12_20PM.png" alt=""/></img></a><br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 25 seconds waiting for element to be clickable: By.id: com.ba.mobile:id/button1
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
-Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1600x900, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=7.1.2, automationName=null, browserName=null, platformName=Android, deviceName=emulator-5554, unexpectedAlertBehaviour=true}, platformVersion=7.1.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G950F, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 43acbcb4-9571-4810-8682-a28493d2142d
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
 	at base.ScreenBase.waitforElementClickable(ScreenBase.java:36)
 	at screens.ba.BaHomeScreen.bookFlightBtn(BaHomeScreen.java:84)
-	at testcases.ba.baPlanTripTest.oneAdultOneWay(baPlanTripTest.java:80)
+	at testcases.ba.baPlanTripTest.oneAdultOneWay(baPlanTripTest.java:79)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.43 seconds
+Command duration or timeout: 5.30 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
-Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1600x900, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=7.1.2, automationName=null, browserName=null, platformName=Android, deviceName=emulator-5554, unexpectedAlertBehaviour=true}, platformVersion=7.1.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G950F, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 43acbcb4-9571-4810-8682-a28493d2142d
 *** Element info: {Using=id, value=com.ba.mobile:id/button1}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
@@ -197,52 +262,47 @@ Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 28 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace355885103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace355885103'><pre>org.openqa.selenium.TimeoutException: Timed out after 25 seconds waiting for element to be clickable: By.id: com.ba.mobile:id/button1
+	... 23 more
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace49980371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace49980371'><pre>org.openqa.selenium.TimeoutException: Timed out after 25 seconds waiting for element to be clickable: By.id: com.ba.mobile:id/button1
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
-Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1600x900, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=7.1.2, automationName=null, browserName=null, platformName=Android, deviceName=emulator-5554, unexpectedAlertBehaviour=true}, platformVersion=7.1.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G950F, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 43acbcb4-9571-4810-8682-a28493d2142d
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
 	at base.ScreenBase.waitforElementClickable(ScreenBase.java:36)
 	at screens.ba.BaHomeScreen.bookFlightBtn(BaHomeScreen.java:84)
-	at testcases.ba.baPlanTripTest.oneAdultOneWay(baPlanTripTest.java:80)
+	at testcases.ba.baPlanTripTest.oneAdultOneWay(baPlanTripTest.java:79)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.43 seconds
+Command duration or timeout: 5.30 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L1016967&apos;, ip: &apos;172.19.172.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=4.4.2, automationName=null, browserName=null, platformName=Android, deviceName=samsung-nexus-127.0.0.1:62001, unexpectedAlertBehaviour=true}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G955U, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
-Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
+Capabilities [{app=null, appPackage=com.ba.mobile, deviceScreenSize=1600x900, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, appActivity=com.ba.mobile.activity.launch.LaunchActivity, desired={app=null, appPackage=com.ba.mobile, appActivity=com.ba.mobile.activity.launch.LaunchActivity, platformVersion=7.1.2, automationName=null, browserName=null, platformName=Android, deviceName=emulator-5554, unexpectedAlertBehaviour=true}, platformVersion=7.1.2, webStorageEnabled=false, locationContextEnabled=false, automationName=null, takesScreenshot=true, browserName=null, javascriptEnabled=true, deviceModel=SM-G950F, platformName=Android, deviceManufacturer=samsung, unexpectedAlertBehaviour=true}]
+Session ID: 43acbcb4-9571-4810-8682-a28493d2142d
 *** Element info: {Using=id, value=com.ba.mobile:id/button1}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -274,10 +334,74 @@ Session ID: 4a9a06a2-5d40-47dd-93a2-eed17fcbec88
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 28 more
+	... 23 more
 </pre></div></td>
-<td>34</td>
-<td>testcases.ba.baPlanTripTest@38afe297</td></tr>
+<td>28</td>
+<td>testcases.ba.baPlanTripTest@7dc0f706</td></tr>
+<tr>
+<td title='testcases.ba.baPlanTripTest.oneAdultRtn()'><b>oneAdultRtn</b><br>Test class: testcases.ba.baPlanTripTest<br>Parameters: org.testng.TestRunner@4c198dec<br/>
+<a href="#Output-1892554448" onClick='toggleBox("Output-1892554448", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1892554448" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1892554448">
+<a target="_blank" href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_13_18PM.png">Screenshot Captured</a><br/>
+<br><a target='_blank' href="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_13_18PM.png"><img height=200, width=200, src="C:\Workspace\AppiumTesting\BlueStacks.BA.Poc\test-output\html\screenshots/02-Oct-2018__02_13_18PM.png" alt=""/></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
+- native content: &quot;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.View/android.view.View[4]/android.widget.FrameLayout[1]/android.widget.TextView&quot; 
+- html content: &quot;by id or name &quot;hardCodedOutboundTravelDate&quot;&quot;
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
+	at screens.ba.BaTravelCalendarScreen.clickOutboundTravelDate(BaTravelCalendarScreen.java:44)
+	at screens.ba.BaTravelCalendarScreen.travelDate(BaTravelCalendarScreen.java:58)
+	at testcases.ba.baPlanTripTest.oneAdultRtn(baPlanTripTest.java:108)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892554448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1892554448'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
+- native content: &quot;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.View/android.view.View[4]/android.widget.FrameLayout[1]/android.widget.TextView&quot; 
+- html content: &quot;by id or name &quot;hardCodedOutboundTravelDate&quot;&quot;
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;L1016967&apos;, ip: &apos;172.19.179.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(&lt;generated&gt;)
+	at screens.ba.BaTravelCalendarScreen.clickOutboundTravelDate(BaTravelCalendarScreen.java:44)
+	at screens.ba.BaTravelCalendarScreen.travelDate(BaTravelCalendarScreen.java:58)
+	at testcases.ba.baPlanTripTest.oneAdultRtn(baPlanTripTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>54</td>
+<td>testcases.ba.baPlanTripTest@7dc0f706</td></tr>
 </table><p>
 </body>
 </html>

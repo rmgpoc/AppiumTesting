@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeSuite;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import utility.AppiumServer;
+import utility.BlueStacksEmulator;
 import utility.CommonUtils;
 import utility.ExcelReader;
 import utility.MyScreenRecorder;
@@ -28,6 +29,8 @@ public class TestBase {
 		log.debug("Screen Recorder Started");
 		NoxPlayerEmulator.start();
 		log.debug("NoxPlayer Emulator Started");
+//		BlueStacksEmulator.start();
+//		log.debug("BlueStacks Emulator Started");
 
 		if (driver == null) {
 			AppiumServer.start();
@@ -63,6 +66,8 @@ public class TestBase {
 		log.debug("Appium Server Stopped");
 		NoxPlayerEmulator.stop();
 		log.debug("NoxPlayer Emulator Stopped");
+//		BlueStacksEmulator.stop();
+//		log.debug("BlueStacks Emulator Stopped");
 		MyScreenRecorder.stop();
 		log.debug("Screen Recorder Stopped");
 

@@ -20,14 +20,24 @@ public class BaTravelCalendarScreen extends ScreenBase{
 	@AndroidFindBy(id="com.ba.mobile:id/outboundDateLL")
 	public MobileElement outboundTravelDateBtn;
 	
+//	NoxPlayer
 	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.View/android.view.View[4]/android.widget.FrameLayout[1]/android.widget.TextView")
 	public MobileElement hardCodedOutboundTravelDate;
+	
+//	Bluestacks
+//	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.FrameLayout[1]/android.widget.TextView")
+//	public MobileElement hardCodedOutboundTravelDate;
 	
 	@AndroidFindBy(id="com.ba.mobile:id/inboundDateLL")
 	public MobileElement inboundTravelDateBtn;
 	
+//	NoxPlayer
 	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.View/android.view.View[6]/android.widget.FrameLayout[3]/android.widget.TextView")
 	public MobileElement hardCodedInboundTravelDate;
+	
+//	Bluestacks
+//	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.view.ViewGroup/android.view.ViewGroup[6]/android.widget.FrameLayout[2]/android.widget.TextView")
+//	public MobileElement hardCodedInboundTravelDate;
 	
 	@AndroidFindBy(id="com.ba.mobile:id/doneFilter")
 	public MobileElement doneBtn;

@@ -10,7 +10,7 @@ public class BlueStacksEmulator {
 	public static void start() throws InterruptedException, IOException {
 		
 		bluestacks.exec("cmd /c start /min " + "C:\\Eclipse\\workspace\\BlueStacks.BA.Poc\\src\\test\\resources\\batch\\Start_BlueStacks.bat");
-		Thread.sleep(30000);
+		Thread.sleep(45000);
 
 	}
 

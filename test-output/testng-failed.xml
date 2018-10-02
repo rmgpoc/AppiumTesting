@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [POC Test Suite Page Object Model with PageFactory]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [POC Test Suite Page Object Model with PageFactory]" parallel="tests">
   <listeners>
     <listener class-name="listener.CustomListeners"/>
     <listener class-name="listener.ExtentReporterNG"/>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Test(failed)">
+  <test thread-count="5" name="Test(failed)" parallel="tests">
     <classes>
       <class name="testcases.ba.baPlanTripTest">
         <methods>
           <include name="init"/>
+          <include name="failureScenario" invocation-numbers="0"/>
+          <include name="oneAdultRtn" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="oneAdultOneChildRtn" invocation-numbers="0"/>
           <include name="oneAdultOneWay" invocation-numbers="0"/>
